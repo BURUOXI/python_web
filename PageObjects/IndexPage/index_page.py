@@ -34,3 +34,4 @@ class IndexPage(BasePage):
         self.click_element(loc.login_company, doc)
 
 
+
