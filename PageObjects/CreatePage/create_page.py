@@ -16,3 +16,5 @@ class CreatePage(BasePage):
         # self.wait_eleVisible(loc.user_add_dialog_msg, doc)
         sleep(2)
         return self.get_element_text(loc.licence_name, doc)
+
+
