@@ -112,7 +112,12 @@ class BasePage:
         pass
 
     # 上传操作
-    def upload_file(self):
-        pass
+    def upload_file(self, doc, key):
+        logger.info('{0}, 输入值 {1}'.format(doc, key))
+        try:
+            self.driver.find_element(By.NAME, 'file').send_keys(key)
 
+        except:
+            logger.info('{0},页面元素输入失败！！！'.format(doc))
+            raise
     # 滚动条处理
